@@ -20,6 +20,6 @@ LABEL summary="$SUMMARY" \
     version="$tag_version" \
     maintainer=""
 
-RUN pip install --no-cache-dir "git+https://github.com/andrewwhitehead/aries-cloudagent-python.git@refactor/transport#egg=aries_cloudagent"
+RUN pip install --no-cache-dir "git+https://github.com/andrewwhitehead/aries-cloudagent-python.git@dispatch-active#egg=aries_cloudagent"
 
 ENTRYPOINT ["/bin/bash", "-c", "aca-py \"$@\"", "--"]
